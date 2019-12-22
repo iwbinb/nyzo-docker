@@ -10,7 +10,7 @@ RUN ./gradlew build
 RUN mkdir -p /var/lib/nyzo/production
 RUN cp trusted_entry_points /var/lib/nyzo/production/trusted_entry_points
 
-RUN bash -c 'echo "$HOSTNAME" > /var/lib/nyzo/production/nickname'
+RUN bash -c 'echo testdcckrr > /var/lib/nyzo/production/nickname'
 #RUN bash -c 'echo "$PRIVATE_SEED" > /var/lib/nyzo/production/verifier_private_seed'
 
 RUN mkdir -p /var/log/supervisor
